@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Katik - Segitiga Calculator</title>
+</head>
+<body>
+  <div class="calculator" id="luasCalculator">
+    <h2>Katik - Segitiga Calculator</h2>
+
+    <!-- Perhitungan Luas -->
+    <div>
+      <h3>Perhitungan Luas</h3>
+      <label for="alasLuas">Panjang Alas (a): </label>
+      <input type="number" id="alasLuas" placeholder="Masukkan panjang alas">
+
+      <label for="tinggiLuas">Tinggi (t): </label>
+      <input type="number" id="tinggiLuas" placeholder="Masukkan tinggi">
+
+      <button onclick="hitungLuas()">Hitung Luas</button>
+      <button onclick="resetLuas()">Reset</button>
+
+      <div class="result">
+        <h4>Hasil Luas Segitiga:</h4>
+        <p id="luasResult">-</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="calculator" id="kelilingCalculator">
+    <!-- Perhitungan Keliling -->
+    <div>
+      <h3>Perhitungan Keliling</h3>
+      <label for="sisiA">Panjang Sisi A: </label>
+      <input type="number" id="sisiA" placeholder="Masukkan panjang sisi A">
+
+      <label for="sisiB">Panjang Sisi B: </label>
+      <input type="number" id="sisiB" placeholder="Masukkan panjang sisi B">
+
+      <label for="sisiB">Panjang Sisi C: </label>
+      <input type="number" id="sisiC" placeholder="Masukkan panjang sisi B">
+
+      <button onclick="hitungKeliling()">Hitung Keliling</button>
+      <button onclick="resetKeliling()">Reset</button>
+
+      <div class="result">
+        <h4>Hasil Keliling Segitiga:</h4>
+        <p id="kelilingResult">-</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
